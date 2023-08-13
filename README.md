@@ -11,7 +11,7 @@ Welcome to **Inspire Me Now**, a Dockerized Node.js application that generates r
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/yourusername/inspire-me-now-app.git`
+1. Clone the repository: `git clone https://github.com/imunreal7/inspire-me-now-app.git`
 2. Navigate to the project directory: `cd inspire-me-now-app`
 3. Install dependencies: `npm install`
 4. Run the app locally: `npm start`
@@ -22,6 +22,9 @@ To run the app using Docker:
 
 1. Build the Docker image: `docker build -t inspire-me-now .`
 2. Run a Docker container: `docker run -p 3000:3000 inspire-me-now`
+For convenient development with automatic code updates and interactive mode, you can use the following command:
+`docker run -it -p 9001:3000 -v $(pwd)/app:/app inspire-me-now`
+This command maps your local code directory to the container, allowing you to see instant updates while you develop.
 
 Visit [http://localhost:3000](http://localhost:3000) to access the app.
 
